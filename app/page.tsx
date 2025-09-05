@@ -1,9 +1,12 @@
-import Image from "next/image";
+'use client'
+import { NotificationProvider } from "./components/Notification";
+// import Spline from '@splinetool/react-spline/next';
 
 export default function Home() {
   return (
+    <NotificationProvider>
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+      {/* <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -16,7 +19,7 @@ export default function Home() {
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
+              app/page.tsx
             </code>
             .
           </li>
@@ -97,7 +100,16 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
-      </footer>
+      </footer> */}
+      import Spline from '@splinetool/react-spline/next';
+
+
+    {/* <main>
+      <Spline
+        scene="https://prod.spline.design/VXvl7rRHfXLHJFlP/scene.splinecode" 
+      />
+    </main> */}
     </div>
+    </NotificationProvider>
   );
 }
